@@ -30,7 +30,7 @@ The idea of this step is to filter areas with high variance and then intersect t
 ### **Histogram-based segmentation techniques**
 In order to do this, we apply otsu segmentation technique that creates segmentation in a dynamic way. We also apply a fixed threshold for the segmentation for comparative purposes.    
   
-#### Small areas removal
+### Small areas removal
 
 To remove the small áreas from the image, we apply a floodfill in the imagens, then we remove the áreas that are smaller than a specific threshold.  
 
