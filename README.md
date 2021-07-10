@@ -1,16 +1,15 @@
 ### [Overview](#overview) | [Students](#students) | [Examples](#examples) | [References](#references) 
 
-# satellite-deforestation-monitor
+# Satellite-deforestation-monitor
 
-Final project for the image processing course at the University of São Paulo (USP)
-
-
+This is the final project for the image processing course at the University of São Paulo (USP)
 
 ---
 ### Overview
 In this project we did a simple system for deforestation monitoring.
 
-In order to do this:
+In order to do this we did the following steps:
+ - 
 
 --- 
 ### Examples
