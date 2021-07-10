@@ -18,6 +18,9 @@ In order to do this we did the following steps:
    - The value 0 is assigned to other pixels
  - An opening operation is applied to reduce isolated areas that are dark green.
  - A closing operation is performed to unify regions with many dark green pixels but with 'holes'.
+ - Apply a filter by regions with high variance (ideally because they are regions with foliage).
+ - Apply a histogram-based segmentation techniques
+ - Removal of regions with areas smaller than a certain noise removal threshold
 
 --- 
 ### Examples
