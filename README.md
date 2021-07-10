@@ -9,7 +9,7 @@ This is the final project for the image processing course at the University of S
 In this project we did a simple system for deforestation monitoring.
 
 In order to do this we did the following steps:
- - 
+ - First we apply a Gaussian low-pass filter in order to smooth the image, this step also 
 
 --- 
 ### Examples
