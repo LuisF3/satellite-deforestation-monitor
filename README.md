@@ -25,11 +25,7 @@ In order to do this we did the following steps:
 ### Specificities
 
 #### **Variance Filter**
-The idea of this step is to filter areas with high variance and then intersect the result that was obtained at the end of opening and closing operations. A good result was expected because deforested areas are more homogeneous than forest areas due to the foliage of the trees.  
-
-However, we tested several parameters and didn't get any significant improvement with this filter, so we gave it up.  
-
-We tested with kernel variance filter 3, 5, 7 and 9 and several different variance thresholds (both fixed values and values based on quantiles).  
+The idea of this step is to filter areas with high variance and then intersect the result that was obtained at the end of opening and closing operations. A good result was expected because deforested areas are more homogeneous than forest areas due to the foliage of the trees.However, we tested several parameters and didn't get any significant improvement with this filter, so we gave it up. We also tested with kernel variance filter 3, 5, 7 and 9 and several different variance thresholds (both fixed values and values based on quantiles).  
   
 #### **Histogram-based segmentation techniques**
 In order to do this, we apply otsu segmentation technique that creates segmentation in a dynamic way. We also apply a fixed threshold for the segmentation for comparative purposes.    
