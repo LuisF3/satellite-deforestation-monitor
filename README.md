@@ -3,13 +3,21 @@
 # Satellite-deforestation-monitor
 
 This is the final project for the image processing course at the University of São Paulo (USP)
+Este é 
+
 
 ---
 ### Overview
 In this project we did a simple system for deforestation monitoring.
 
 In order to do this we did the following steps:
- - First we apply a Gaussian low-pass filter in order to smooth the image, this step also 
+ - First we apply a Gaussian low-pass filter in order to smooth the image, which results in a blured image.
+ - The target image is converted to the HLS model
+ - The image is binarized following the following criteria :
+   - The value 1 is assigned to all regions with hue between 110 and 200 (considering a hue in the range 0-360), which represents the green color, and luminance less than about 25%, which represents dark colors. That is, the value 1 is assigned to all dark green pixels.
+   - The value 0 is assigned to other pixels
+ - An opening operation is applied to reduce isolated areas that are dark green.
+ - A closing operation is performed to unify regions with many dark green pixels but with 'holes'.
 
 --- 
 ### Examples
@@ -18,7 +26,7 @@ Please see the following tutorial notebooks for a guide on how to use **satellit
   
 ---
 ### Students
-  -  Henrique Tadashi Tarzia - 10692210
+  - Henrique Tadashi Tarzia - 10692210
   - Lucas Xavier Ebling Pereira - 10692183
   - Luis Felipe Ribeiro Chaves - 10801221 
   - Victor Akihito Kamada Tomita - 10692082
