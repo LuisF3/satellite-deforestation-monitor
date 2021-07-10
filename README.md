@@ -1,4 +1,4 @@
-### [Overview](#overview)  | [Specificities](#specificities) | [Examples](#examples) | [Students](#students) | [Results](#results)  | [References](#references) 
+### [Overview](#overview)  | [Specificities](#specificities) | [Examples](#examples) | [Results](#results) | [Students](#students) | [References](#references) 
 
 # Satellite-deforestation-monitor
 
