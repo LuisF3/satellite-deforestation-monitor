@@ -3,11 +3,20 @@
 # satellite-deforestation-monitor
 
 Final project for the image processing course at the University of São Paulo (USP)
+
+
+
 ---
-## Overview
-A simple project for deforestation monitoring. 
+### Overview
+In this project we did a simple system for deforestation monitoring.
 
+In order to do this:
 
+--- 
+### Examples
+Please see the following tutorial notebooks for a guide on how to use **satellite-deforestation-monitor** on your projects:
+ - **How to use** : [Introduction](https://drive.google.com/drive/folders/1mP4s86rJRre1cNfXYY7-XOkVATl5tZIn)
+  
 ---
 ### Students
   -  Henrique Tadashi Tarzia - 10692210
@@ -17,4 +26,4 @@ A simple project for deforestation monitoring.
 ---
 
 ### References
- - https://clouard.users.greyc.fr/Pantheon/experiments/forestarea-extraction/index-en.html
+ - [Satellite forest reconition](https://clouard.users.greyc.fr/Pantheon/experiments/forestarea-extraction/index-en.html)
