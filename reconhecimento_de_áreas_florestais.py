@@ -223,24 +223,26 @@ def forest_recognition(img_path):
         M = np.product(img.shape)
         his, bins = np.histogram(img, np.array(range(0, 256)))
         threshold = -1
-        final_value = -1
+        min_var = 1.7976931348623157e+308
+
+        img_t = thresholding(img, 0)
 
         for t in bins[1:-1]:
+            img_ti = thresholding(img, t)
             # pesos 
             Wa = np.sum(his[:t])/float(M)
             Wb = np.sum(his[t:])/float(M)
-            # valor médio dos pesos
-            ma = np.mean(his[:t])
-            mb = np.mean(his[t:])
+            # variância intraclasse
+            sig_a = np.var(img[np.where(img_ti == 1)])
+            sig_b = np.var(img[np.where(img_ti == 0)])
             # valor de comparação
-            value = Wa * Wb * (ma - mb) ** 2
-
-            if value > final_value:
+            cur_var = Wa * sig_a + Wb * sig_b
+            if cur_var < min_var:
+                min_var = cur_var
                 threshold = t
-                final_value = value
 
         otsu_img = img.copy()
-        #print('\033[1mThreshold (Otsu):\033[0m', threshold)
+        print('\033[1mThreshold (Otsu):\033[0m', threshold)
         otsu_img[img > threshold] = 0
         otsu_img[img <= threshold] = 1
 
