@@ -41,7 +41,7 @@ To remove the small áreas from the image, we label all connected components of 
 --- 
 ## Examples
 Please see the following tutorial notebooks for a guide on how to use **satellite-deforestation-monitor** on your projects:
- - **How to use** : [Introduction](https://drive.google.com/drive/folders/1mP4s86rJRre1cNfXYY7-XOkVATl5tZIn)
+ - **How to use** : [Introduction](https://colab.research.google.com/drive/1-D7oavhSN8DiloRoGnqQb2pqohQFTNLZ)
 
 ---
 ## Results
